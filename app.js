@@ -19,4 +19,10 @@ for (let i = 0; i <= page + 10; i++) {
   tasklist.appendChild(arraylist[i]);
 }
 
-// console.log(arraylist);
+next.addEventListener("click", () => {
+  page == arraylist.length - 10 ? (page = 0) : (page += 10);
+  tasklist.innerHTML = "";
+  for (let i = page; i < page + 10; i++) {
+    tasklist.appendChild(arraylist[i]);
+  }
+});
