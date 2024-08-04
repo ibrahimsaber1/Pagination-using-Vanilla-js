@@ -26,3 +26,11 @@ next.addEventListener("click", () => {
     tasklist.appendChild(arraylist[i]);
   }
 });
+
+Previous.addEventListener("click", () => {
+  page == 0 ? (page = 90) : (page -= 10);
+  tasklist.innerHTML = "";
+  for (let i = page; i < page + 10; i++) {
+    tasklist.appendChild(arraylist[i]);
+  }
+});
