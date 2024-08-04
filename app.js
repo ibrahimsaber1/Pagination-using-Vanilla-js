@@ -28,7 +28,7 @@ next.addEventListener("click", () => {
 });
 
 Previous.addEventListener("click", () => {
-  page == 0 ? (page = 90) : (page -= 10);
+  page == 0 ? (page = arraylist.length - 10) : (page -= 10);
   tasklist.innerHTML = "";
   for (let i = page; i < page + 10; i++) {
     tasklist.appendChild(arraylist[i]);
@@ -44,7 +44,7 @@ first.addEventListener("click", () => {
 });
 
 last.addEventListener("click", () => {
-  page = 90;
+  page = arraylist.length - 10;
   tasklist.innerHTML = "";
   for (let i = page; i < page + 10; i++) {
     tasklist.appendChild(arraylist[i]);
