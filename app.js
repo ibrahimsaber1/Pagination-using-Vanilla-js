@@ -42,3 +42,11 @@ first.addEventListener("click", () => {
     tasklist.appendChild(arraylist[i]);
   }
 });
+
+last.addEventListener("click", () => {
+  page = 90;
+  tasklist.innerHTML = "";
+  for (let i = page; i < page + 10; i++) {
+    tasklist.appendChild(arraylist[i]);
+  }
+});
