@@ -34,3 +34,11 @@ Previous.addEventListener("click", () => {
     tasklist.appendChild(arraylist[i]);
   }
 });
+
+first.addEventListener("click", () => {
+  page = 0;
+  tasklist.innerHTML = "";
+  for (let i = page; i < page + 10; i++) {
+    tasklist.appendChild(arraylist[i]);
+  }
+});
